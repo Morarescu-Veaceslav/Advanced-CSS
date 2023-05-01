@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        padding: 1rem;
+        font-family: sans-serif;
+      }
+      .container {
+        width: 1100px;
+        max-width: 100%;
+        margin: 0 auto;
+      }
+
+      .box {
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        grid-auto-rows: minmax(160px, auto);
+        gap: 20px;
+        justify-items: start;
+      }
+
+      .gallery {
+        background-color: rgb(135, 218, 222);
+        border-radius: 10px;
+        margin: 5px;
+        border: 1px solid #ccc;
+        width: 160px;
+      }
+
+      div.gallery img {
+        width: 100%;
+        height: auto;
+      }
+
+      div.desc {
+        padding: 1px;
+        text-align: center;
+        background-color: white;
+        border-radius: 0px 0px 10px 10px;
+      }
+
+      @media screen and (min-width: 481px) and (max-width: 767px) {
+        .box {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        .box {
+          grid-template-columns: repeat(1, 1fr);
+          grid-template-rows: repeat(5, 1fr) 0;
+          justify-items: center;
+        }
+        div:nth-child(n + 6),
+        .paragraf {
+          display: none;
+        }
+        h1 {
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Gallery Heading</h1>
+      <div class="box">
+        <div class="gallery">
+          <img src="placeholder-image.png" alt="gallery" />
+          <div class="desc">
+            <p>Image Title</p>
+          </div>
+        </div>
+        <div class="gallery">
+          <img src="placeholder-image.png" alt="gallery" />
+          <div class="desc">
+            <p>Image Title</p>
+          </div>
+        </div>
+        <div class="gallery">
+          <img src="placeholder-image.png" alt="gallery" />
+          <div class="desc">
+            <p>Image Title</p>
+          </div>
+        </div>
+        <div class="gallery">
+          <img src="placeholder-image.png" alt="gallery" />
+          <div class="desc">
+            <p>Image Title</p>
+          </div>
+        </div>
+        <div class="gallery">
+          <img src="placeholder-image.png" alt="gallery" />
+          <div class="desc">
+            <p>Image Title</p>
+          </div>
+        </div>
+        <div class="gallery">
+          <img src="placeholder-image.png" alt="gallery" />
+          <div class="desc">
+            <p>Image Title</p>
+          </div>
+        </div>
+        <div class="gallery">
+          <img src="placeholder-image.png" alt="gallery" />
+          <div class="desc">
+            <p>Image Title</p>
+          </div>
+        </div>
+        <div class="gallery">
+          <img src="placeholder-image.png" alt="gallery" />
+          <div class="desc">
+            <p>Image Title</p>
+          </div>
+        </div>
+        <div class="gallery">
+          <img src="placeholder-image.png" alt="gallery" />
+          <div class="desc">
+            <p>Image Title</p>
+          </div>
+        </div>
+        <div class="gallery">
+          <img src="placeholder-image.png" alt="gallery" />
+          <div class="desc">
+            <p>Image Title</p>
+          </div>
+        </div>
+      </div>
+      <p class="paragraf">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis
+        harum repellendus cupiditate in suscipit veniam sed magnam nesciunt
+        facilis, facere, est explicabo, maiores culpa fuga ullam nihil minima
+        recusandae. Vero. Earum possimus voluptates autem. Asperiores beatae
+        commodi reprehenderit perspiciatis voluptates vel ratione, explicabo
+        quia magnam in aliquam sapiente laboriosam fugit nisi eius saepe eaque
+        dignissimos repellat nesciunt sunt modi reiciendis.
+      </p>
+    </div>
+  </body>
+</html>
